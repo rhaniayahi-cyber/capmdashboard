@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil — CAPM Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="simulation.html">Simulation</a>
+    <a href="resultats.html">Résultats</a>
+    <a href="graphiques.html">Graphiques</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>CAPM Asset Management Dashboard</h1>
+    <p>
+        Risque, rendement, simulation de portefeuille et interprétation financière
+    </p>
+</header>
+
+<div class="container">
+
+    <!-- PRIX / LIEN MARCHÉ -->
+    <div class="card">
+        <h2>📈 Suivi des marchés financiers</h2>
+
+        <p>
+            Pour consulter les prix des actions en temps réel, accédez directement à une plateforme spécialisée :
+        </p>
+
+        <a href="https://fr.investing.com/equities" target="_blank" class="market-link">
+            🔗 Voir les marchés en direct sur Investing.com
+        </a>
+
+        <div class="tip-box">
+            Vous pouvez y consulter les cours en direct, les variations, les volumes et les actualités financières.
+        </div>
+    </div>
+
+    <!-- PROBLEMATIQUE -->
+    <div class="problem-box">
+        <h2>Problématique</h2>
+        <p>
+            Les rendements observés des actions correspondent-ils réellement à ceux prédits par le modèle CAPM ?
+            Ce projet vise à analyser la relation entre le risque et le rendement à partir de données financières réelles,
+            puis à comparer les résultats théoriques et observés.
+        </p>
+    </div>
+
+    <!-- PRESENTATION -->
+    <div class="card">
+        <h2>Présentation du projet</h2>
+        <p>
+            Ce projet a été réalisé dans le cadre d’un travail de programmation appliqué à la finance.
+            Son objectif est d’étudier la relation entre le risque et le rendement des actions à l’aide du modèle CAPM,
+            tout en proposant une interface visuelle claire et pédagogique.
+        </p>
+
+        <p>
+            Nous avons utilisé Python pour charger les données financières, nettoyer les séries temporelles,
+            calculer les rendements journaliers, estimer les bêtas des entreprises et déterminer les rendements
+            théoriques du CAPM. Ces résultats sont ensuite comparés aux rendements réellement observés.
+        </p>
+    </div>
+
+    <!-- CONTENU DASHBOARD -->
+    <div class="card">
+        <h2>Contenu du dashboard</h2>
+        <p>
+            Le dashboard est structuré en plusieurs pages complémentaires :
+        </p>
+
+        <p>
+            • <span class="highlight">Simulation</span> : permet de tester différentes stratégies d’investissement en fonction d’un capital initial. <br>
+            • <span class="highlight">Résultats</span> : présente les performances, les probabilités de gain et les comparaisons entre stratégies. <br>
+            • <span class="highlight">Graphiques</span> : visualise la relation entre le bêta, le rendement et la Security Market Line.
+        </p>
+    </div>
+
+    <!-- ENTREPRISES -->
+    <div class="card">
+        <h2>Entreprises étudiées</h2>
+        <p>
+            Les entreprises analysées dans ce projet sont : Apple, Microsoft, Tesla, Airbus,
+            LVMH, TotalEnergies, Air Products, Alibaba, Meta Platforms et Pharmagest.
+        </p>
+
+        <p>
+            Le marché est représenté par l’indice SPY (S&amp;P 500), utilisé comme référence
+            pour mesurer le risque systématique.
+        </p>
+    </div>
+
+    <!-- INTERET -->
+    <div class="card">
+        <h2>Intérêt du projet</h2>
+        <p>
+            Le modèle CAPM permet d’évaluer un actif financier en tenant compte à la fois de son rendement
+            et de son niveau de risque. Il offre ainsi un cadre d’analyse permettant de déterminer si une action
+            est sous-évaluée, correctement valorisée ou surévaluée.
+        </p>
+
+        <p>
+            Ce projet illustre concrètement cette relation en combinant analyse de données,
+            modélisation financière et visualisation interactive.
+        </p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    CAPM Dashboard — Projet de finance quantitative
+</div>
+
+</body>
+</html>

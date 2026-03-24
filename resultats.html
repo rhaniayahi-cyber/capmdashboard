@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Résultats — CAPM Asset Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="simulation.html">Simulation</a>
+    <a href="resultats.html">Résultats</a>
+    <a href="graphiques.html">Graphiques</a>
+</nav>
+
+<header>
+    <h1>Résultats du projet</h1>
+    <p>Comparaison des stratégies, analyse du risque et interprétation économique</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Vue d’ensemble</h2>
+        <p>
+            Cette page synthétise les principaux résultats obtenus dans notre projet de simulation de portefeuille.
+            À partir d’une fortune initiale, nous avons comparé trois styles de gestion : la gestion passive,
+            la gestion active et la gestion mixte. L’objectif est d’évaluer non seulement la performance moyenne,
+            mais aussi le niveau de risque, la probabilité d’atteindre certains objectifs de rendement et la
+            cohérence de chaque stratégie avec différents profils d’investisseurs.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Indicateurs clés</h2>
+        <div class="grid-3">
+            <div class="metric-card">
+                <h3>Stratégie la plus performante</h3>
+                <div class="metric-value">Gestion active</div>
+                <div class="metric-subtitle">meilleure fortune moyenne finale</div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Stratégie la plus stable</h3>
+                <div class="metric-value">Gestion passive</div>
+                <div class="metric-subtitle">logique prudente et moins spéculative</div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Meilleur compromis</h3>
+                <div class="metric-value">Gestion mixte</div>
+                <div class="metric-subtitle">équilibre entre rendement et sécurité</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Comparaison des stratégies</h2>
+        <table class="table-like">
+            <thead>
+                <tr>
+                    <th>Stratégie</th>
+                    <th>Fortune moyenne finale</th>
+                    <th>Probabilité de hausse</th>
+                    <th>Probabilité de baisse</th>
+                    <th>Lecture générale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gestion passive</td>
+                    <td>2613.99 €</td>
+                    <td>95.4 %</td>
+                    <td>4.6 %</td>
+                    <td>Plus prudente, plus régulière, mais moins performante</td>
+                </tr>
+                <tr>
+                    <td>Gestion active</td>
+                    <td>4636.94 €</td>
+                    <td>98.4 %</td>
+                    <td>1.6 %</td>
+                    <td>Très performante, mais plus exposée au risque</td>
+                </tr>
+                <tr>
+                    <td>Gestion mixte</td>
+                    <td>3473.08 €</td>
+                    <td>99.8 %</td>
+                    <td>0.2 %</td>
+                    <td>Meilleur équilibre entre sécurité et rendement</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            La gestion active affiche la meilleure performance moyenne. Elle repose sur une sélection ciblée
+            d’entreprises, ce qui permet d’obtenir un potentiel de rendement supérieur. En contrepartie, ce type
+            de gestion est plus sensible aux fluctuations du marché et à la volatilité des titres choisis.
+        </p>
+        <p>
+            La gestion passive consiste à suivre le marché global. Elle offre une progression moins spectaculaire,
+            mais elle reste cohérente avec une logique de prudence et de diversification. Elle convient mieux
+            à un investisseur cherchant de la stabilité plutôt qu’une forte surperformance.
+        </p>
+        <p>
+            La gestion mixte combine les avantages des deux approches. Elle permet d’obtenir une performance
+            solide tout en limitant davantage le risque. Dans notre projet, elle apparaît comme la stratégie
+            la plus équilibrée.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Atteinte des objectifs de rendement</h2>
+        <table class="table-like">
+            <thead>
+                <tr>
+                    <th>Stratégie</th>
+                    <th>Probabilité +5 %</th>
+                    <th>Temps moyen +5 %</th>
+                    <th>Probabilité +10 %</th>
+                    <th>Temps moyen +10 %</th>
+                    <th>Probabilité +15 %</th>
+                    <th>Temps moyen +15 %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gestion passive</td>
+                    <td>99.6 %</td>
+                    <td>83.81 jours</td>
+                    <td>99.1 %</td>
+                    <td>151.03 jours</td>
+                    <td>98.5 %</td>
+                    <td>223.21 jours</td>
+                </tr>
+                <tr>
+                    <td>Gestion active</td>
+                    <td>99.9 %</td>
+                    <td>55.77 jours</td>
+                    <td>99.8 %</td>
+                    <td>113.27 jours</td>
+                    <td>99.6 %</td>
+                    <td>155.99 jours</td>
+                </tr>
+                <tr>
+                    <td>Gestion mixte</td>
+                    <td>100 %</td>
+                    <td>75.09 jours</td>
+                    <td>100 %</td>
+                    <td>131.08 jours</td>
+                    <td>100 %</td>
+                    <td>183.18 jours</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Cette partie du projet permet d’aller plus loin qu’un simple calcul de fortune finale. En effet,
+            nous mesurons également combien de temps il faut, en moyenne, pour atteindre plusieurs seuils de gain.
+            Cette lecture est particulièrement utile, car elle rapproche l’analyse d’un véritable comportement
+            d’investisseur : un portefeuille n’est pas seulement jugé sur son résultat final, mais aussi sur sa
+            capacité à atteindre des objectifs dans un délai raisonnable.
+        </p>
+        <p>
+            Les résultats montrent que la gestion active permet d’atteindre les objectifs plus rapidement, en particulier
+            pour les seuils de +10 % et +15 %. La gestion mixte reste cependant très compétitive, tout en offrant une
+            sécurité supérieure. La gestion passive, quant à elle, reste plus lente, ce qui est cohérent avec son
+            profil plus prudent.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Lecture par profil d’investisseur</h2>
+        <div class="grid-3">
+            <div class="metric-card">
+                <h3>Profil prudent</h3>
+                <div class="metric-subtitle">
+                    La gestion passive conviendra davantage à un investisseur qui cherche à préserver son capital,
+                    à suivre le marché et à limiter les prises de risque excessives.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Profil dynamique</h3>
+                <div class="metric-subtitle">
+                    La gestion active sera plus cohérente avec un investisseur prêt à accepter la volatilité
+                    pour rechercher un rendement plus élevé.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <h3>Profil équilibré</h3>
+                <div class="metric-subtitle">
+                    La gestion mixte apparaît comme une solution adaptée à un investisseur qui souhaite trouver
+                    un compromis entre sécurité et performance.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Lecture économique générale</h2>
+        <p>
+            L’un des apports principaux de ce projet est de montrer que la performance seule ne suffit pas à juger
+            une stratégie. Une stratégie peut offrir un rendement moyen très élevé, mais au prix d’une plus forte
+            dispersion des résultats ou d’une volatilité plus importante. À l’inverse, une stratégie plus modérée
+            peut être plus pertinente pour certains investisseurs si elle offre une meilleure stabilité.
+        </p>
+        <p>
+            Cette logique correspond directement à la théorie moderne du portefeuille : la bonne stratégie n’est pas
+            forcément celle qui rapporte le plus, mais celle qui correspond le mieux au niveau de risque que l’on est
+            prêt à accepter.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Limites du modèle</h2>
+        <div class="warning-box">
+            Les résultats présentés ici reposent sur des simulations Monte Carlo utilisant les données historiques
+            observées dans notre projet. Ils permettent une lecture cohérente du risque et du rendement, mais ils
+            ne constituent pas une garantie de performance future.
+        </div>
+        <p>
+            Plusieurs limites doivent être rappelées. Les marchés futurs peuvent se comporter différemment des données
+            passées. Les simulations restent dépendantes des hypothèses retenues. De plus, certains événements extrêmes,
+            comme des crises financières, des chocs géopolitiques ou des changements macroéconomiques brutaux, ne sont
+            pas entièrement capturés par ce type de modélisation.
+        </p>
+        <p>
+            Ces résultats doivent donc être interprétés comme un outil d’analyse et d’apprentissage. Ils sont utiles
+            pour comparer des stratégies et comprendre des mécanismes financiers, mais ils ne remplacent pas une
+            décision d’investissement réelle fondée sur une analyse plus complète.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Conclusion</h2>
+        <p>
+            Cette page montre clairement que les stratégies ne doivent pas être évaluées uniquement par leur performance
+            moyenne. La gestion active semble la plus rentable, la gestion passive la plus prudente, et la gestion mixte
+            la plus équilibrée. Le choix optimal dépend donc du profil de l’investisseur, de son horizon de placement
+            et de son aversion au risque.
+        </p>
+        <p>
+            En reliant les résultats de simulation, les objectifs de rendement et les profils d’investisseurs,
+            notre projet met en évidence la logique centrale de la finance : toute décision d’investissement doit
+            être pensée comme un arbitrage entre rendement espéré, risque supporté et cohérence avec les objectifs
+            personnels de l’agent.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+    Résultats du projet CAPM — Synthèse stratégique, financière et pédagogique
+</div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphiques — CAPM Asset Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="simulation.html">Simulation</a>
+    <a href="resultats.html">Résultats</a>
+    <a href="graphiques.html">Graphiques</a>
+</nav>
+
+<header>
+    <h1>Graphiques du projet</h1>
+    <p>Visualisation du risque, du rendement et des stratégies d’investissement</p>
+</header>
+
+<div class="container">
+
+    <!-- INTRO -->
+    <div class="card">
+        <h2>Pourquoi cette page est importante ?</h2>
+        <p>
+            Les graphiques permettent de transformer des résultats financiers en représentations visuelles
+            plus faciles à interpréter. Ils jouent un rôle essentiel dans ce projet, car ils permettent
+            de comprendre la relation entre le risque et le rendement, mais aussi d’évaluer l’efficacité
+            des différentes stratégies d’investissement.
+        </p>
+    </div>
+
+    <!-- GRAPH 1 -->
+    <div class="card chart-card">
+        <h2>Relation entre le bêta et le rendement réel</h2>
+
+        <p>
+            Ce graphique montre la relation entre le risque d’une action (mesuré par le bêta)
+            et son rendement moyen observé. Le bêta indique la sensibilité d’une action aux variations du marché.
+        </p>
+
+        <p>
+            Chaque point correspond à une entreprise. Plus le point est à droite, plus le risque est élevé.
+            Plus il est en haut, plus le rendement est important.
+        </p>
+
+        <p>
+            On observe une tendance générale : les actions plus risquées offrent en moyenne
+            des rendements plus élevés, ce qui est cohérent avec la logique du CAPM.
+        </p>
+
+        <img src="relation_beta_rendement.png">
+
+        <div class="tip-box">
+            Ce graphique valide empiriquement la relation fondamentale entre risque et rendement.
+        </div>
+    </div>
+
+    <!-- GRAPH 2 -->
+    <div class="card chart-card">
+        <h2>Security Market Line (CAPM)</h2>
+
+        <p>
+            La Security Market Line représente la relation théorique entre le risque (bêta)
+            et le rendement attendu selon le modèle CAPM.
+        </p>
+
+        <p>
+            La droite correspond au rendement théorique. Les points représentent les rendements réels
+            observés pour chaque entreprise.
+        </p>
+
+        <p>
+            Si une action est au-dessus de la droite, elle offre un rendement supérieur au modèle :
+            elle peut être considérée comme sous-évaluée. À l’inverse, une action en dessous peut être surévaluée.
+        </p>
+
+        <img src="security_market_line.png">
+
+        <div class="success-box">
+            Ce graphique permet de comparer directement théorie (CAPM) et réalité du marché.
+        </div>
+    </div>
+
+    <!-- GRAPH 3 -->
+    <div class="card chart-card">
+        <h2>Frontière efficiente (Markowitz)</h2>
+
+        <p>
+            Ce graphique représente l’ensemble des portefeuilles possibles en fonction de leur risque
+            (écart-type) et de leur rendement.
+        </p>
+
+        <p>
+            Chaque point correspond à une combinaison différente d’actifs. La frontière efficiente
+            regroupe les portefeuilles les plus performants pour un niveau de risque donné.
+        </p>
+
+        <p>
+            Le point rouge représente le portefeuille optimal (meilleur ratio rendement/risque),
+            tandis que le point bleu correspond au portefeuille le moins risqué.
+        </p>
+
+        <img src="efficient_frontier.png">
+
+        <div class="tip-box">
+            Ce graphique montre l’intérêt de la diversification et de l’optimisation de portefeuille.
+        </div>
+    </div>
+
+    <!-- GRAPH 4 -->
+    <div class="card chart-card">
+        <h2>Évolution du portefeuille : utilisateur vs optimal</h2>
+
+        <p>
+            Ce graphique compare l’évolution de la valeur d’un portefeuille construit par l’utilisateur
+            avec celle du portefeuille optimal obtenu grâce à la méthode de Markowitz.
+        </p>
+
+        <p>
+            On observe que le portefeuille optimal croît plus rapidement, ce qui montre
+            l’intérêt de l’optimisation dans la gestion d’actifs.
+        </p>
+
+        <p>
+            Cette différence de performance met en évidence l’impact des choix d’allocation
+            sur le rendement final.
+        </p>
+
+        <img src="user_vs_optimal_evolution.png">
+
+        <div class="success-box">
+            L’optimisation permet d’améliorer significativement la performance du portefeuille.
+        </div>
+    </div>
+
+    <!-- CONCLUSION -->
+    <div class="card">
+        <h2>Lecture globale</h2>
+        <p>
+            L’ensemble de ces graphiques montre que :
+            <br>• le risque et le rendement sont positivement liés
+            <br>• le CAPM fournit une base théorique utile
+            <br>• l’optimisation de portefeuille améliore les performances
+        </p>
+
+        <p>
+            Ces résultats illustrent l’importance des outils quantitatifs en finance pour prendre
+            des décisions d’investissement plus efficaces.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+    CAPM Dashboard — Analyse graphique avancée
+</div>
+
+</body>
+</html>
